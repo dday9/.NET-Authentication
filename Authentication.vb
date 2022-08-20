@@ -111,9 +111,15 @@ Public Class Authentication
         Dim salt = hashAsBytes.Take(_byteLength).ToArray()
         Dim hash = GenerateHash(password, salt)
         Dim combinedHash = CombineSaltAndHash(salt, hash)
-        Dim comparingEncryptedPassword = Convert.ToBase64String(combinedHash)
 
-        Return encryptedPassword.Equals(comparingEncryptedPassword)
+        Dim counter = 0
+        Dim passwordsMatch = True
+        Do While counter < hashAsBytes.Length AndAlso counter < combinedHash.Length AndAlso passwordsMatch
+            passwordsMatch = hashAsBytes(counter).Equals(combinedHash(counter))
+            counter += 1
+        Loop
+
+        Return passwordsMatch
     End Function
 
 End Class
