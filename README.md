@@ -110,3 +110,12 @@ Dim combinedHash = Authentication.CombineSaltAndHash(salt, hash)
 Dim encryptedPassword = Convert.ToBase64String(combinedHash)
 Dim passesLogin = Authentication.IsPasswordValid(encryptedPassword, newPassword)
 ```
+
+## Donate
+Show your support! Your (non-tax deductible) donation of Monero cryptocurrency is a sign of solidarity among web developers.
+
+Being self taught, I have come a long way over the years. I certainly do not intend on making a living from this free feature, but my hope is to earn a few dollars to validate all of my hard work.
+
+Monero Address: 447SPi8XcexZnF7kYGDboKB6mghWQzRfyScCgDP2r4f2JJTfLGeVcFpKEBT9jazYuW2YG4qn51oLwXpQJ3oEXkeXUsd6TCF
+
+![447SPi8XcexZnF7kYGDboKB6mghWQzRfyScCgDP2r4f2JJTfLGeVcFpKEBT9jazYuW2YG4qn51oLwXpQJ3oEXkeXUsd6TCF](monero.png)
