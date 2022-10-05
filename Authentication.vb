@@ -115,8 +115,10 @@ Public Class Authentication
         Dim counter = 0
         Dim passwordsMatch = True
         Do While counter < hashAsBytes.Length AndAlso counter < combinedHash.Length AndAlso passwordsMatch
-            passwordsMatch = hashAsBytes(counter).Equals(combinedHash(counter))
             counter += 1
+            If (passwordsMatch) Then
+                passwordsMatch = hashAsBytes(counter).Equals(combinedHash(counter))
+            End If
         Loop
 
         Return passwordsMatch
