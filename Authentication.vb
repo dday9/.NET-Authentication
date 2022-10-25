@@ -70,7 +70,7 @@ Public Class Authentication
     End Function
 
     ''' <summary>
-    ''' Uses <see cref="RNGCryptoServiceProvider"/> to generate a salt
+    ''' Uses <see cref="RandomNumberGenerator.Create"/> to generate a salt
     ''' </summary>
     ''' <exception cref="Exception"><see cref="_byteLength"/> cannot be less than 1</exception>
     ''' <returns><see cref="Byte"/> array</returns>
