@@ -8,6 +8,9 @@ The [Authentication.vb](Authentication.vb) code file is uncompiled. Follow these
  2. Select the file in the browse dialog
  3. Click Add
 
+## Demo
+Fiddle: https://dotnetfiddle.net/sVvYeS
+
 ## Fields
 ### \_byteLength
 Gets the length of the salt and hash
